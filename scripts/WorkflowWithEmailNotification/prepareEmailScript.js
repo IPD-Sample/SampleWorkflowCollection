@@ -1,4 +1,4 @@
-var YOUR_FLP_URL = "https://flpnwc-xxx.com/";
+var YOUR_FLP_URL = "<YOUR_FLP_URL>";
 var user = $.context.recipientUsers;
 var groups = $.context.recipientGroups;
 var text = "This is an email notification for an ad hoc work item with priority - " + $.context.adhocTaskPriority;
