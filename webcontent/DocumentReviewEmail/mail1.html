@@ -1,0 +1,123 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+	<head>
+		<title>SAP Intelligent Product Design : You have a task on your name</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<style>
+			p {
+				color: #222222;
+				font-family: "Arial","sans-serif";
+				font-size: 9pt;
+				line-height: 12pt;
+			}
+			li {
+				color: #222222;
+				font-family: "Arial","sans-serif";
+				font-size: 9pt;
+				line-height: 12pt;
+			}
+			table {
+				width: 600px;
+			}
+			hr {
+				height: 3px;
+				color: #000;
+				background-color: #000;
+			}  
+			.footer {
+				font-size: 7pt;
+				line-height: normal;
+				margin: 0 0 0.0001pt;
+			}
+			.footer_bar {
+				background: none repeat scroll 0 0 #000000;
+				height: 12pt;
+				text-align: right;
+			}
+			.footer_bar_link {
+				color: #FFFFFF;
+				font-family: "Arial","sans-serif";
+				font-size: 7.5pt;
+				text-decoration: none;
+			}
+			.header {
+				font-size: 12pt;
+				line-height: 12pt;
+				font-weight: bold;
+			}
+			.header_small {
+				font-weight: bold;
+			}
+			.header_tiny {
+				font-size: 7pt;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div align="center">
+			<table>
+				<tr>
+					<td>
+						<br/>
+						<p class="header">
+							SAP Intelligent Product Design Notification
+						</p>
+						<p class="header_small">
+							Dear User,
+						</p>
+						<p>
+							This is an email notification for an ad hoc work item.
+						</p>
+						<p>
+							You have been assigned a work item:
+						</p>
+						<p>
+							&nbsp;&nbsp;&nbsp;Work flow Name : <b>${context.subject}</b>
+						</p>
+						<p>
+							To open the task, click on the following link or copy and paste the link into your Internet browser:
+						</p>
+						<p>
+							${context.url}
+						</p>
+						<p class="header_small">
+							Best Regards,<br/>SAP Intelligent Product Design
+						</p>
+						<p class="header_tiny">
+							** This is an automated email notification. Please do not reply to this email. **
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p class="footer_bar">
+							<a class="footer_bar_link" href="https://www.sap.com/company/legal/copyright/index.epx" target="_blank">Copyright/Trademark</a>
+							<span class="footer_bar_link">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+							<a class="footer_bar_link" href="https://www.sap.com/company/legal/privacy.epx" target="_blank">Privacy</a>
+							<span class="footer_bar_link">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+							<a class="footer_bar_link" href="https://www.sap.com/company/legal/impressum.epx" target="_blank">Impressum</a>
+							<span class="footer_bar_link">&nbsp;&nbsp;</span>
+						</p>
+						<p class="footer">
+						SAP SE, Dietmar-Hopp-Allee 16, 69190 Walldorf, Germany
+						</p>
+						<br/>
+						<p class="footer">
+							Pflichtangaben/Mandatory Disclosure Statements: <a href="https://www.sap.com/company/legal/impressum.epx">https://www.sap.com/company/legal/impressum.epx</a>
+						</p>
+						<p class="footer">
+							Diese E-Mail kann Betriebs- oder Geschäftsgeheimnisse oder sonstige vertrauliche Informationen enthalten. Sollten Sie diese E-Mail irrtümlich erhalten haben, ist Ihnen eine Kenntnisnahme des Inhalts, eine Vervielfältigung oder Weitergabe der E-Mail ausdrücklich untersagt. Bitte benachrichtigen Sie uns und vernichten Sie die empfangene E-Mail. Vielen Dank.
+						</p>
+						<br/>
+						<p class="footer">
+							This e-mail may contain trade secrets or privileged, undisclosed, or otherwise confidential information. If you have received this e-mail in error, you are hereby notified that any review, copying, or distribution of it is strictly prohibited. Please inform us immediately and destroy the original transmittal. Thank you for your cooperation.
+						</p>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+
+</html>

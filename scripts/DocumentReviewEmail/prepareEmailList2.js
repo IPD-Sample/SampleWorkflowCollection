@@ -4,7 +4,7 @@ var arrayToPush = $.context.emailList.d.results;
 var emailList = "";
 
 for(var i = 0; i < arrayToPush.length; i++){
-	if(($.context.sContributor).contains(arrayToPush[i].Id)){
+	if(($.context.sAdministrator).contains(arrayToPush[i].Id)){
 		emailList += arrayToPush[i].Email + ",";
 	}
 }
